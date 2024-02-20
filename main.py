@@ -4,11 +4,11 @@ import json
 import time
 import requests
 import websocket
-from keep_alive import keep_alive
+
 
 status = "online" #online/dnd/idle
 
-custom_status = "discord.gg/permfruits" #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
+custom_status = "youtube.com/@SealedSaucer" #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
@@ -80,6 +80,4 @@ def run_onliner():
     while True:
         onliner(usertoken, status)
         time.sleep(30)
-
-keep_alive()
 run_onliner()
