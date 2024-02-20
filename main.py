@@ -8,7 +8,7 @@ import websocket
 
 status = "online" #online/dnd/idle
 
-custom_status = "youtube.com/@SealedSaucer" #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
+custom_status = "discord.gg/permfruits" #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
